@@ -57,6 +57,7 @@
     "@contentful/rich-text-html-renderer": "^13.1.0",
     "@contentful/rich-text-types": "^13.1.0",
     "@rebass/preset": "^4.0.5",
+    "axios": "^0.19.1",
     "connected-react-router": "^6.5.2",
     "contentful": "^7.6.0",
     "emotion-theming": "^10.0.27",
