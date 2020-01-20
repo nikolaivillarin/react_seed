@@ -9,7 +9,7 @@
 
 import produce from 'immer';
 import { handleActions } from 'redux-actions';
-import { loadDeviceList, loadedDeviceList } from './actions';
+import { loadDeviceList, loadedDeviceList, loadListOfFlights } from './actions';
 
 // The initial state of the Main
 export const initialState = {
@@ -25,6 +25,11 @@ const homeReducer = handleActions(
     }),
     [loadedDeviceList]: produce((draft, action) => {
       draft.deviceList = action.payload.deviceList;
+      return draft;
+    }),
+    [loadListOfFlights]: produce(draft => {
+      console.log('LoadListOfFLights from app/containers/homePage');
+
       return draft;
     }),
   },

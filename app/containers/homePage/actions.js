@@ -21,8 +21,12 @@ export const {
   loadDeviceList,
   loadedDeviceList,
   errorDeviceList,
+  searchForFlights,
+  loadListOfFlights,
 } = createActions(
   'LOAD_DEVICE_LIST',
   'LOADED_DEVICE_LIST',
   'ERROR_DEVICE_LIST',
+  'SEARCH_FOR_FLIGHTS',
+  'LOAD_LIST_OF_FLIGHTS',
 );

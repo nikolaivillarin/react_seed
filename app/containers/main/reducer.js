@@ -21,6 +21,9 @@ const appReducer = (state = initialState, action) =>
         draft.error = false;
         draft.userData.repositories = false;
         break;
+      case 'LOAD_LIST_OF_FLIGHTS':
+        console.log('LOAD_LIST_OF_FLIGHTS from app/containers/main');
+        break;
     }
   });
 
